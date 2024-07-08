@@ -25,7 +25,7 @@ function Login() {
     .then((response) => {
       localStorage.setItem('token', response.data.token);
       axiosInstance.defaults.headers['Authorization'] = `Token ${response.data.token}`;
-      navigate('/');
+      navigate('/welcome');  // Redirigir a la página de bienvenida
     })
     .catch((error) => {
       console.error('Error:', error);
