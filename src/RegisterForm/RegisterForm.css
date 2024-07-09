@@ -1,117 +1,137 @@
-/* RegistrationForm.css */
-
-/* Estilos generales */
 .registration-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    min-height: 100vh;
+    background-color: #f0f4f8;
     padding: 20px;
     box-sizing: border-box;
   }
   
   .registration-form-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
   
-  .registration-form-container form label {
+  .registration-form-container .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form-container h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .registration-form-container .back-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-left: 20px; 
+  }
+  
+  .registration-form-container .back-button:hover {
+    background-color: #45a049;
+  }
+  
+  .registration-form-container label {
+    display: block;
     margin-bottom: 10px;
-    font-size: 1.2em;
-    color: #555;
-    width: 100%;
+    font-weight: bold;
   }
   
-  .registration-form-container form input {
+  .registration-form-container input,
+  .registration-form-container select {
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
   }
   
-  .registration-form-container button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #007bff;
+  .registration-form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1em;
   }
   
-  .registration-form-container button:hover {
-    background-color: #0056b3;
+  .registration-form-container button[type="submit"]:hover {
+    background-color: #45a049;
   }
   
-  /* Media queries para dispositivos pequeños (teléfonos) */
-  @media (max-width: 600px) {
+  .notification {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+  }
+  
+ 
+  @media (max-width: 768px) {
     .registration-form-container form {
+      max-width: 100%;
       padding: 15px;
     }
   
-    .registration-form-container form label {
-      font-size: 1em;
+    .registration-form-container h1 {
+      font-size: 1.5em;
     }
   
-    .registration-form-container form input {
+    .registration-form-container .back-button {
+      font-size: 0.7em;
+      padding: 5px;
+    }
+  
+    .registration-form-container input,
+    .registration-form-container select {
       padding: 8px;
     }
   
-    .registration-form-container button {
-      padding: 8px 16px;
+    .registration-form-container button[type="submit"] {
+      padding: 8px;
       font-size: 0.9em;
     }
   }
   
-  /* Media queries para dispositivos medianos (tablets) */
-  @media (min-width: 601px) and (max-width: 1024px) {
+  @media (max-width: 480px) {
     .registration-form-container form {
-      padding: 18px;
-    }
-  
-    .registration-form-container form label {
-      font-size: 1.1em;
-    }
-  
-    .registration-form-container form input {
-      padding: 9px;
-    }
-  
-    .registration-form-container button {
-      padding: 9px 18px;
-      font-size: 0.95em;
-    }
-  }
-  
-  /* Media queries para dispositivos grandes (PCs) */
-  @media (min-width: 1025px) {
-    .registration-form-container form {
-      padding: 20px;
-    }
-  
-    .registration-form-container form label {
-      font-size: 1.2em;
-    }
-  
-    .registration-form-container form input {
       padding: 10px;
     }
   
-    .registration-form-container button {
-      padding: 10px 20px;
-      font-size: 1em;
+    .registration-form-container h1 {
+      font-size: 1.2em;
+    }
+  
+    .registration-form-container .back-button {
+      font-size: 0.6em;
+      padding: 4px;
+    }
+  
+    .registration-form-container input,
+    .registration-form-container select {
+      padding: 6px;
+    }
+  
+    .registration-form-container button[type="submit"] {
+      padding: 6px;
+      font-size: 0.8em;
     }
   }
   
