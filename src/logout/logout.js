@@ -14,7 +14,7 @@ function Logout() {
     .then(() => {
       localStorage.removeItem('token');
       axiosInstance.defaults.headers['Authorization'] = null;
-      navigate('/login');
+      navigate('/');
     })
     .catch((error) => {
       console.error('Error:', error);
