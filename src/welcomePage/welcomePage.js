@@ -14,7 +14,7 @@ function WelcomePage() {
       <div className="iframe-container">
         <iframe 
           title="DANE REPORTE" 
-          src="https://app.powerbi.com/view?r=eyJrIjoiYjVjNDFiYTgtMTc3YS00OGE1LTlhYWEtNGQzMzczNzcyYjljIiwidCI6IjAwNTRhYWU4LWU0YTUtNDRlYy1iZDg5LWJlNDkyYmU5NGU1NyIsImMiOjR9" 
+          src="https://app.powerbi.com/view?r=eyJrIjoiOTNkZWNkMDQtYTA4Mi00NTNhLWE4YWUtZDA4YTQwN2E2YjAyIiwidCI6IjAwNTRhYWU4LWU0YTUtNDRlYy1iZDg5LWJlNDkyYmU5NGU1NyIsImMiOjR9" 
           allowFullScreen="true"
         ></iframe>
       </div>
