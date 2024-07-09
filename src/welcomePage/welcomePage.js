@@ -1,15 +1,19 @@
 import React from 'react';
 import Logout from '../logout/logout';
+import './welcomePage.css';
 
 function WelcomePage() {
   return (
-    <div>
-      <h1>Bienvenido</h1>
-      <Logout />
-      <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center' }}>
+    <div className="welcome-container">
+      <div className="header-container">
+        <h1>Bienvenido</h1>
+        <div className="logout-container">
+          <Logout />
+        </div>
+      </div>
+      <div className="iframe-container">
         <iframe 
           title="DANE REPORTE" 
-          style={{ width: '80%', height: '500px', border: 'none' }}
           src="https://app.powerbi.com/view?r=eyJrIjoiYjVjNDFiYTgtMTc3YS00OGE1LTlhYWEtNGQzMzczNzcyYjljIiwidCI6IjAwNTRhYWU4LWU0YTUtNDRlYy1iZDg5LWJlNDkyYmU5NGU1NyIsImMiOjR9" 
           allowFullScreen="true"
         ></iframe>

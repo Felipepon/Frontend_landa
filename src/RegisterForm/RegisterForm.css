@@ -1,7 +1,7 @@
-/* Home.css */
+/* RegistrationForm.css */
 
 /* Estilos generales */
-.home-container {
+.registration-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,13 +12,7 @@
     box-sizing: border-box;
   }
   
-  .home-container h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .home-container form {
+  .registration-form-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,16 +21,17 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
   }
   
-  .home-container form label {
+  .registration-form-container form label {
     margin-bottom: 10px;
     font-size: 1.2em;
     color: #555;
+    width: 100%;
   }
   
-  .home-container form input {
+  .registration-form-container form input {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -45,7 +40,7 @@
     box-sizing: border-box;
   }
   
-  .home-container button {
+  .registration-form-container button {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
@@ -56,33 +51,25 @@
     transition: background-color 0.3s;
   }
   
-  .home-container button:hover {
+  .registration-form-container button:hover {
     background-color: #0056b3;
-  }
-  
-  .home-container p {
-    color: red;
   }
   
   /* Media queries para dispositivos pequeños (teléfonos) */
   @media (max-width: 600px) {
-    .home-container h1 {
-      font-size: 2em;
-    }
-  
-    .home-container form {
+    .registration-form-container form {
       padding: 15px;
     }
   
-    .home-container form label {
+    .registration-form-container form label {
       font-size: 1em;
     }
   
-    .home-container form input {
+    .registration-form-container form input {
       padding: 8px;
     }
   
-    .home-container button {
+    .registration-form-container button {
       padding: 8px 16px;
       font-size: 0.9em;
     }
@@ -90,23 +77,19 @@
   
   /* Media queries para dispositivos medianos (tablets) */
   @media (min-width: 601px) and (max-width: 1024px) {
-    .home-container h1 {
-      font-size: 2.2em;
-    }
-  
-    .home-container form {
+    .registration-form-container form {
       padding: 18px;
     }
   
-    .home-container form label {
+    .registration-form-container form label {
       font-size: 1.1em;
     }
   
-    .home-container form input {
+    .registration-form-container form input {
       padding: 9px;
     }
   
-    .home-container button {
+    .registration-form-container button {
       padding: 9px 18px;
       font-size: 0.95em;
     }
@@ -114,23 +97,19 @@
   
   /* Media queries para dispositivos grandes (PCs) */
   @media (min-width: 1025px) {
-    .home-container h1 {
-      font-size: 2.5em;
-    }
-  
-    .home-container form {
+    .registration-form-container form {
       padding: 20px;
     }
   
-    .home-container form label {
+    .registration-form-container form label {
       font-size: 1.2em;
     }
   
-    .home-container form input {
+    .registration-form-container form input {
       padding: 10px;
     }
   
-    .home-container button {
+    .registration-form-container button {
       padding: 10px 20px;
       font-size: 1em;
     }
